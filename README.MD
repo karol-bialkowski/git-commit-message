@@ -30,6 +30,6 @@ You can disable run hooks by unselecting option PHPStorm option "Run git hooks" 
 
 https://vimeo.com/424898839
 
-Source: 
+# Source
 
 https://medium.com/@nicklee1/prepending-your-git-commit-messages-with-user-story-ids-3bfea00eab5a
