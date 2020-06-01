@@ -8,7 +8,8 @@ This is simply a script to auto prepend your commit message with issue number:
 
 - commit by your favorite IDE
 - commit by command line
-- skip autocomplete by `--no-verify` 
+- manually skip autocomplete by `--no-verify` 
+- auto skip on branches: master, test, dev,live or beta
 
 # Getting started
 
