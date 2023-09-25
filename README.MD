@@ -2,7 +2,11 @@
 
 This is simply a script to auto prepend your commit message with issue number:
 
-**aa/1234-name-of-branch** -> "#1234 added new feature"
+**aa/1234-name-of-branch** -> "#1234 added new feature" or 
+
+**aa/14-name-of-branch** -> "#14 added new feature" or 
+
+**aa/123456-name-of-branch** -> "#123456 added new feature"
 
 # Features
 
@@ -10,6 +14,7 @@ This is simply a script to auto prepend your commit message with issue number:
 - commit by command line
 - manually skip autocomplete by `--no-verify` 
 - auto skip on branches: master, test, dev,live or beta
+- supporting 1 or 9 numbers in branch name
 
 # Getting started
 
