@@ -6,7 +6,7 @@ fi
 
 BRANCH_NAME=$(git symbolic-ref --short HEAD)
 BRANCH_EXCLUDED=$(printf "%s\n" "${BRANCHES_TO_SKIP[@]}" | grep -c "^$BRANCH_NAME$")
-TRIMMED=$(echo $BRANCH_NAME | sed -e 's:^\(.*[0-9][0-9][0-9][0-9]\)-.*:\1:' | cut -c 4-)
+TRIMMED=$(echo $BRANCH_NAME | grep -o '[0-9]*')
 
 if echo "$BRANCH_NAME" | grep -oPq '[a-z][a-z]\/[0-9]{4}\-'; then
     if [ -n "$BRANCH_NAME" ] &&  ! [[ $BRANCH_EXCLUDED -eq 1 ]]; then
